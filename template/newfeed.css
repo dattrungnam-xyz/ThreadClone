@@ -1,0 +1,132 @@
+.main__content {
+  width: 600px;
+}
+.main__post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.main__post--avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main__post--link {
+  display: flex;
+  padding: 2px;
+  align-items: left;
+  border: none;
+  out-line: none;
+  background: transparent;
+  color: #999;
+  flex: 1;
+  cursor: text;
+  font-size: 15px;
+}
+.main__post--button {
+  font-size: 15px;
+  padding: 7.5px 16px;
+  color: #fff;
+  font-weight: bold;
+  background: #b1b1b1;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+.main__status {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.main__status--ava-contain {
+  position: relative;
+  padding-top: 4px;
+}
+.main__status--button-follow {
+  position: absolute;
+  display: flex;
+
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+  line-height: 13px;
+  color: white;
+  background: black;
+  border-radius: 50%;
+  border: 2px solid white;
+  top: 25px;
+  left: 23px;
+  cursor: pointer;
+  transition: all 0.1 ease;
+}
+
+.main__status--button-follow:hover {
+  transform: scale(1.05);
+}
+.main__status--content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main__status--header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  gap: 8px;
+}
+.main__status--username {
+  font-size: 15px;
+  font-weight: bold;
+  flex: 1;
+  cursor: pointer;
+}
+.main__status--time {
+  color: #999;
+  cursor: pointer;
+}
+.main__status--text {
+  margin-bottom: 10px;
+}
+.main__status--image {
+  width: 230px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.main__status--action,.main__status--statistic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 4px;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+
+.main__status--action-icon {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+.main__status--statistic 
+{
+  margin-top:4px;
+}
+.main__status--statistic span
+{
+  color: #999;
+  font-size:15px;
+}
+.main__status--heart {
+  font-size: 20px;
+}
+.main__status--heart-count {
+  font-size: 15px;
+  color: black;
+}
