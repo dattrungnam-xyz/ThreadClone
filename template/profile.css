@@ -23,6 +23,7 @@
   height: 86px;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
 }
 .user__avatar--image {
   width: 100%;
@@ -34,8 +35,8 @@
   font-size: 15px;
 }
 .user__social {
-  margin-top: 18px;
-  margin-bottom: 16px;
+  margin-top: 14px;
+  margin-bottom: 12px;
   display: flex;
 }
 .user__social--follow {
@@ -47,16 +48,20 @@
   margin-right: 20px;
   cursor: pointer;
 }
-.user__social--follow-infor:hover{
-    text-decoration: underline;
+.user__social--follow-infor:hover {
+  text-decoration: underline;
 }
 .user__social--icon {
   font-size: 24px;
   text-decoration: none;
   color: black;
   cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
 }
-
+.user__social--icon:hover {
+  background: #f5f5f5;
+}
 .profile__edit {
   padding: 12px 0;
   width: 100%;
@@ -83,17 +88,18 @@
   text-align: center;
   font-weight: 500;
   color: #999;
-  cursor:pointer;
+  cursor: pointer;
 }
 .profile__status--header-active {
   border-bottom: 1px solid black;
   color: black;
 }
 
-
 @media screen and (max-width: 672px) {
-  .user__infor,.user__bio, .user__social,.profile__edit
-  {
+  .user__infor,
+  .user__bio,
+  .user__social,
+  .profile__edit {
     padding: 0 12px;
   }
 }
