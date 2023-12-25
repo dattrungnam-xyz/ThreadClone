@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Thread</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="modal-create-thread.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__create">
+        <span class="modal__create--title"> Thread mới </span>
+        <div class="modal__create--content">
+          <div class="modal__create--content-container">
+            <div class="modal__create--avatar">
+              <img
+                class="modal__create--img"
+                src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/351451162_820515082753007_4802230003113620194_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=2897gCCuMP4AX-xCFyy&_nc_ht=scontent.fsgn2-6.fna&cb_e2o_trans=q&oh=00_AfCMBr_ZXSOmGCZL_3bmdv5KM0TidLftFa2ZFGmliPt6TQ&oe=658E9A49"
+                alt=""
+              />
+            </div>
+            <div class="modal__create--status">
+              <span class="modal__create--username"> _dat.trung.nam_ </span>
+
+              <p
+                spellcheck="false"
+                contenteditable="true"
+                class="modal__create--text"
+              >
+                đây là value
+              </p>
+              <div class="modal__create--more">
+                <label class="modal__create--label" for="fileInput">
+                  <i class="modal__create--icon fa-regular fa-image"></i>
+                </label>
+                <input type="file" hidden name="" id="fileInput" />
+
+                <label class="modal__create--label" for="">
+                  <i class="modal__create--icon fa-solid fa-hashtag"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__create--footer">
+            <div class="modal__create--option">
+              người theo dõi bạn có thể trả lời
+            </div>
+            <div class="modal__create--submit">
+              <button class="modal__create--button">Đăng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let textInput = document.querySelector(".textInput");
+    let textDisplay = document.querySelector(".textDisplay");
+    function handleChangeInput() {
+      textDisplay.innerText = textInput.value;
+    }
+
+    console.log(textDisplay);
+    console.log(textInput);
+  </script>
+</html>
