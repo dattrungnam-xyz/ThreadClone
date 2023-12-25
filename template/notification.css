@@ -1,7 +1,10 @@
 .notification
 {
     margin-top:60px;
-  
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
 }
 
 .notification__control--container{
@@ -10,8 +13,8 @@
     gap:8px;
     align-items:center;
     justify-content:center;
-    margin-bottom:16px;
-      border:1px solid #ccc;
+    margin-bottom:8px;
+      /* border:1px solid #ccc; */
 }
 
 .notification__control--button{
@@ -23,6 +26,12 @@
     border:1px solid #d9d9d9;
     border-radius:8px;
     background:white;
+    cursor:pointer;
+    transision: all 0.2s ease-in-out;
+}
+
+.notification__control--button:active{
+   transform:scale(0.97)
 
 }
 
@@ -36,12 +45,16 @@
 .notification__list
 {
     width:620px;
+    padding:0 20px;
 }
 
 .notification__item
 {
     display:flex;
     gap:12px;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
     
 }
 
@@ -51,6 +64,7 @@
     height:36px;
     overflow:hidden;
     border-radius:50%;
+    /* padding: 12px 0; */
 }
 
 .notification__item--img
@@ -61,19 +75,35 @@
     object-fit:cover;
 }
 
+.notification__item--infor
+{
+   flex:1;
+   padding: 12px 0;
+   border-bottom:1px solid #ccc;
+}
+
 .notification__item--username
 {
     font-size:15px;
     font-weight:bold;
+    cursor:pointer;
 }
+
+.notification__item--username:hover
+{
+    text-decoration:underline;
+}
+
 .notification__item--time
 {
     font-size:15px;
     color:#999;
+    cursor:pointer;
 }
 
 .notification__item--detail
 {
     font-size:15px;
     color:#999;
+    
 }
