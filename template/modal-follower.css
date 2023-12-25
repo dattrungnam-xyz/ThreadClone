@@ -118,3 +118,18 @@
   margin-right: 20px;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 672px) {
+  .modal__follower--content
+  {
+    top:30%;
+    left:0;
+    right:0;
+    bottom:0;
+    transform: none;
+    width:100%;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+  }
+}
