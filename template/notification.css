@@ -1,109 +1,133 @@
-.notification
-{
-    margin-top:60px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
+.notification {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background:white;
 }
 
-.notification__control--container{
-    display:flex;
-    flex-direction:row;
-    gap:8px;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:8px;
-      /* border:1px solid #ccc; */
+.notification__control--container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  background:white;
+  /* border:1px solid #ccc; */
 }
 
-.notification__control--button{
-    border:none;
-    outline:none;
-    font-size:15px;
-    font-weight:bold;
-    padding:8px 28px;
-    border:1px solid #d9d9d9;
-    border-radius:8px;
-    background:white;
-    cursor:pointer;
-    transision: all 0.2s ease-in-out;
+.notification__control--button {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 28px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transision: all 0.2s ease-in-out;
 }
 
-.notification__control--button:active{
-   transform:scale(0.97)
-
+.notification__control--button:active {
+  transform: scale(0.97);
 }
 
-.notification__control--button-active
-{
-    color:white!important;
-    border:1px solid black!important;
-    background:black!important;
+.notification__control--button-active {
+  color: white !important;
+  border: 1px solid black !important;
+  background: black !important;
 }
 
-.notification__list
-{
-    width:620px;
-    padding:0 20px;
+.notification__list {
+  width: 620px;
+  padding: 0 20px;
 }
 
-.notification__item
-{
-    display:flex;
-    gap:12px;
-    align-items:center;
-    justify-content:center;
-    cursor:pointer;
-    
+.notification__item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.notification__item--avatar
-{
-    width:36px;
-    height:36px;
-    overflow:hidden;
-    border-radius:50%;
-    /* padding: 12px 0; */
+.notification__item--avatar {
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 50%;
+  /* padding: 12px 0; */
 }
 
-.notification__item--img
-{
-    width:100%;
-    height:100%;
-    border-radius:50%;
-    object-fit:cover;
+.notification__item--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.notification__item--infor
-{
-   flex:1;
-   padding: 12px 0;
-   border-bottom:1px solid #ccc;
+.notification__item--infor {
+  flex: 1;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
 }
 
-.notification__item--username
-{
-    font-size:15px;
-    font-weight:bold;
-    cursor:pointer;
+.notification__item--username {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.notification__item--username:hover
-{
-    text-decoration:underline;
+.notification__item--username:hover {
+  text-decoration: underline;
 }
 
-.notification__item--time
-{
-    font-size:15px;
-    color:#999;
-    cursor:pointer;
+.notification__item--time {
+  font-size: 15px;
+  color: #999;
+  cursor: pointer;
 }
 
-.notification__item--detail
-{
-    font-size:15px;
-    color:#999;
-    
+.notification__item--detail {
+  font-size: 15px;
+  color: #999;
+}
+
+@media screen and (max-width: 672px) {
+  .notification {
+    /* justify-content: flex-start;
+    flex-direction: column; */
+  }
+
+  .notification__control--container {
+    /* width: 517px; */
+
+
+    padding: 0 12px;
+    width:auto;
+    max-width: 100%;
+    /* overflow-x: scroll; */
+    overflow-y:hidden;
+    display: -webkit-box;
+
+    /* max-width: 100%;
+    overflow-y: hidden;
+    overflow-x:scroll; */
+
+
+  }
+  .notification__control {
+    /* max-width:100%; */
+  }
+
+  .notification__list {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 673px) and (max-width: 990px) {
+
 }
